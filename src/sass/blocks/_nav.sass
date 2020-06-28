@@ -1,0 +1,114 @@
+.nav
+	position: fixed
+	right: 0
+	left: 0
+	width: 100%
+	height: 80px
+	@media (min-width: 1200px)
+		height: 185px
+
+.nav--fixed
+	z-index: 105
+	margin-right: auto
+	margin-left: auto
+	transition: .5s ease
+	background-color: #000000
+	@media (min-width: 1200px)
+		height: 60px
+
+.nav-wrapper
+	display: flex
+	align-items: center
+	flex-direction: row
+	justify-content: space-between
+	max-width: 1570px
+	height: 100%
+	margin-right: auto
+	margin-left: auto
+	padding-right: 15px
+	padding-left: 15px
+
+.nav__menu
+	position: fixed
+	z-index: 100
+	top: 0
+	left: 0
+	display: flex
+	align-items: center
+	flex-direction: column
+	justify-content: center
+	width: 100%
+	min-height: 100%
+	transition: .5s ease
+	transform: translateY(-100%) translateZ(0)
+	background-color: #ef6c38
+
+.nav__menu--visible
+	transition: 1s ease
+	transform: translateY(0) translateZ(0)
+
+.nav__menu-item
+	margin-bottom: 30px
+
+.nav__menu-link
+	letter-spacing: 3px
+	text-transform: uppercase
+	color: #ffffff
+	font-family: 'Montserrat', sans-serif
+	font-size: 24px
+	font-weight: 100
+
+.nav-toggle
+	position: relative
+	overflow: hidden
+	width: 30px 
+	height: 22px
+	margin: 0
+
+.nav-toggle--active
+	.nav-toggle__top
+		top: 11px
+		transform: rotate(45deg)
+	.nav-toggle__center
+		left: -100%
+	.nav-toggle__bottom
+		top: 11px
+		transform: rotate(-45deg)
+	
+.nav-toggle--visible
+	position: absolute
+	z-index: 101
+	top: 0
+	right: 0
+
+.nav-toggle__label
+	display: block
+	width: 30px
+	height: 22px
+	margin: 0
+	cursor: pointer
+	transition: all 0.4s
+
+.nav-toggle__checkbox
+	display: none
+
+.nav-toggle__line
+	position: absolute
+	left: 0
+	display: block
+	width: 100%
+	height: 1px
+	margin: 0
+	transition: all 0.4s
+	pointer-events: none
+	border-radius: 10px
+	background-color: #ffffff
+
+.nav-toggle__top
+	top: 5px
+
+.nav-toggle__center
+	top: 12px
+
+.nav-toggle__bottom
+	top: 19px
