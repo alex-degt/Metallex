@@ -15,21 +15,21 @@
 
 .welcome__item
 	position: relative
-	margin-left: 66px
 	margin-bottom: 40px
+	margin-left: 66px
 	&:last-child
 		margin-bottom: 0
 	&:hover
 		.welcome__item-title
 			&:before
-				transition: .5s ease
 				width: 100%
+				transition: .5s ease
 	@media (min-width: 768px)
 		max-width: 250px
 		&:nth-last-child(-n+2)
 			margin-bottom: 0
 	@media (min-width: 1200px)
-		max-width: auto
+		max-width: 100%
 		margin-right: 20px
 		margin-bottom: 0
 
@@ -39,8 +39,8 @@
 	left: -65px
 
 .welcome__item-title
-	display: inline-block
 	position: relative
+	display: inline-block
 	margin-bottom: 25px
 	letter-spacing: 0.64px
 	text-transform: uppercase
@@ -50,11 +50,11 @@
 	line-height: 18.42px
 	&:before
 		position: absolute
+		bottom: -10px
+		width: 0
 		height: 1px
 		content: ""
-		width: 0
 		background-color: #ffffff
-		bottom: -10px
 
 .welcome__item-text
 	letter-spacing: 0.56px
