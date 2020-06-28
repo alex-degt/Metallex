@@ -9,3 +9,10 @@
 * Mobile First подход
 
 [Онлайн демо](https://alex-degt.github.io/metallex/)
+
+### Тестировать локально:
+```
+git clone https://github.com/alex-degt/metallex.git
+npm i
+gulp
+```
