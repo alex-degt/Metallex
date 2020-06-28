@@ -1,0 +1,25 @@
+nav.nav#nav
+	.nav-wrapper
+		a(href="#!").nav__logo
+			img(src="./img/nav-logo.png", alt="Metalex")
+		.nav-toggle
+			input(type="checkbox" id="burger1").nav-toggle__checkbox
+			label(for="burger1").nav-toggle__label#nav-toggle
+				span.nav-toggle__line.nav-toggle__top
+				span.nav-toggle__line.nav-toggle__center
+				span.nav-toggle__line.nav-toggle__bottom
+		ul.nav__menu#nav__menu
+			li.nav__menu-item
+				a(href="#header").nav__menu-link home
+			li.nav__menu-item
+				a(href="#about").nav__menu-link about
+			li.nav__menu-item
+				a(href="#services").nav__menu-link services
+			li.nav__menu-item
+				a(href="#products").nav__menu-link products
+			li.nav__menu-item
+				a(href="#gallery").nav__menu-link gallery
+			li.nav__menu-item
+				a(href="#partners").nav__menu-link partners
+			li.nav__menu-item
+				a(href="#news").nav__menu-link news
